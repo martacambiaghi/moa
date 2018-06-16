@@ -1,0 +1,379 @@
+
+
+
+p {
+  line-height: 5px;
+  font-size: 18px;
+}
+
+h1 {
+  color: #fd5520;
+  text-align: center;
+  font-size: 70px;
+  font-family: Permanent Marker, serif;
+  position: absolute;
+}
+
+
+h5 {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-family: Permanent Marker, serif;
+  line-height: 3px;
+}
+
+body {
+  font-family: Cutive Mono, monospace;
+  color: black;
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: lighter;
+  text-align: center;
+;
+}
+
+h1 {
+  color:#fd5520;
+  text-align: center;
+  font-size:70px;
+  font-family: Permanent Marker, serif;
+}
+
+h2 {
+  font-size: 15px;
+  color: #fd5520;
+}
+
+h3 {
+  font-size: 10px
+}
+
+h4 {
+  font-size: 18px;
+}
+
+a {
+  font-size: 15Spx;
+  color:#fd5520;
+}
+a:hover {
+  color: white;
+  background-color: #fd5520;
+}
+
+.trattino {
+  color: white;
+}
+
+.foto {
+	width: 1200px;
+	height: 1900px;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  align: center;
+}
+
+
+///navigation bar///
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Cutive Mono", serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50% 50% 50% 50%;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  display: block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transition: .5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label input {
+  display: none;
+}
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .25s 0s ease-in-out;
+}
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+
+
+///spinner///
+@keyframes spin {
+  0% {opacity: 0;}
+  25% {opacity: 1;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes spin2 {
+  0% {opacity: 0;}
+  25% {opacity:0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes spin3 {
+  0% {opacity: 0;}
+  25% {opacity:0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+.spinner {
+  transform: translate(-50%, -50%);
+  animation: spin 4s infinite;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  height: 1,8em;
+  width: 8em;
+  position: fixed;
+
+}
+
+.spinner2 {
+  transform: translate(-50%, -50%);
+  animation: spin2 4s infinite;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  height: 1,8em;
+  width: 8em;
+  position: fixed;
+
+
+
+}
+
+.spinner3 {
+  transform: translate(-50%, -50%);
+  animation: spin3 4s infinite;
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  height: 1,8em;
+  width: 8em;
+  position: fixed;
+
+}
+
+///foto works///
+
+#rivista {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 110%;
+  left: 10%;
+
+
+}
+
+
+#copertina {
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+
+}
+
+#copertina:hover {
+  position: absolute;
+  top: 32%;
+  left: 52%;
+  transition: 2s;
+}
+
+
+
+#logo {
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  top: 100%;
+  left: 8%;
+
+
+}
+
+#logo:hover {
+  position: absolute;
+  top: 98%;
+  left: 10%;
+  transition: 1s;
+}
+
+#carte {
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  top: 170%;
+  left: 40%;
+  margin-bottom: 50px;
+
+
+}
+
+#carte:hover {
+  position: absolute;
+  top: 168%;
+  left: 38%;
+  transition: 1s;
+}
+
+#testocopertina {
+  position: absolute;
+  top: 50%;
+  right:60%;
+  text-align: right;
+}
+
+#testologo {
+  position: absolute;
+  top: 120%;
+  left:60%;
+  text-align: left;
+}
+
+#testocarte {
+  position: absolute;
+  top: 190%;
+  right:70%;
+  text-align: right;
+}
+
+<style>
+
+@keyframes spin {
+  from {width: 0px; height: 0px;}
+  to {width: 50px; height: 50px;}
+}
+
+@keyframes cspin {
+  from {width: 100px; height: 100px;}
+  to {width: 0px; height: 0px;}
+
+}
+
+
+#loading {
+  opacity: 1;
+  animation: cspin 1s infinite alternate;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fd5520;
+  width: 2em;
+  height: 150px;
+
+}
+
+</style>
+
+
+</style>
+
+
+
+#ffd1dc
+#fd5520
