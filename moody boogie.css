@@ -78,7 +78,7 @@ a:hover {
 }
 
 
-///navigation bar///
+
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
 *,
 *:before,
@@ -190,11 +190,11 @@ h1 {
 
 
 
-///spinner///
+
 @keyframes spin {
   0% {opacity: 0;}
   25% {opacity: 1;}
-  50% {opacity: 1;}
+  50% {opacity: 0;}
   100% {opacity: 0;}
 }
 
@@ -250,16 +250,24 @@ h1 {
 
 }
 
-///foto works///
+
 
 #rivista {
-  width: 50px;
-  height: 30px;
+  width: 40%;
+  height: 45%;
   position: absolute;
-  top: 110%;
+  top: 240%;
+  left: 7%;
+  margin-bottom: 50px;
+
+
+}
+
+#rivista:hover {
+  position: absolute;
+  top: 242%;
   left: 10%;
-
-
+  transition: 2s;
 }
 
 
@@ -336,6 +344,13 @@ h1 {
   top: 190%;
   right:70%;
   text-align: right;
+}
+
+#testorivista {
+  position: absolute;
+  top: 260%;
+  right:30%;
+  text-align: left;
 }
 
 <style>
